@@ -11,4 +11,4 @@ well captures the relations among entity tokens and sentences. Then, we incorpor
 # Method
 The overview of our approach for hallucination detection. For token-level uncertainty, we integrate the maximum and variance of the probabilities, along with a sequence decay term. Regarding to sentence-level uncertainty, we interpolate the sum of entity uncertainty through relation-based propagation and global uncertainty via quantile. Finally, we incorporate the relations of neighbor sentences in the semantic graph with graph-based uncertainty calibration for passage-level uncertainty.
 
-![image](https://github.com/141forever/UncerSema4HalluDetec/figures/method.jpg)
+![image](https://github.com/141forever/UncerSema4HalluDetec/blob/main/figures/method.jpg)
