@@ -17,8 +17,11 @@ The overview of our approach for hallucination detection. For token-level uncert
 
 We use AMR and GPT4 to extract the amr path of each sentence. Some of the results are shown in `amr_path_example.txt`, '+' splits the sample ID, sentence ID, and amr path triplets.
 
-We provide examples of uncertainty computation at three different granularities in `token_level.py`, `sentence_level.py`, and `passage_level.py`, respectively. For the NLI part, we use [SelfCheckGPT](https://github.com/potsawee/selfcheckgpt) as an intermediate component.
+We provide examples of uncertainty computation at three different granularities in `token_level.py`, `sentence_level.py`, and `passage_level.py`, respectively. For the NLI part, we use [SelfCheckGPT](https://github.com/potsawee/selfcheckgpt) as an intermediate component. For `sentence_level.py`, we can successfully run the program by inserting the code slots into the corresponding positions in `run_wikibiogpt3.py` of FOCUS.
 
+For the NoteSum dataset and the corresponding experiments, we adopted the same detection method. However, due to company copyright restrictions, the code cannot be made public.
+
+Welcome any issue and email contact.
 # Citation
 If you think this method helps, welcome to cite our paper.
 ```
