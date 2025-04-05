@@ -1,3 +1,15 @@
+def read_co():
+    with open('co.json', 'r', encoding='utf-8') as file:
+        co_dict = json.load(file)
+    with open('co.json', 'r', encoding='utf-8') as file:
+        co_dict2 = json.load(file)
+
+    for key in co_dict.keys():
+        key_list = key.split("+")
+        co_dict2[key_list[0]+"+"+key_list[2]+"+"+key_list[1]]= 1
+
+    return co_dict2
+    
 def calculate_NLI_score(loss_data):
     co_dict = read_co()
 
