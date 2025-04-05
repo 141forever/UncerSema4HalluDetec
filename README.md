@@ -9,7 +9,7 @@ well captures the relations among entity tokens and sentences. Then, we incorpor
 [[Paper Homepage]]() [[ARXIV]](https://arxiv.org/abs/2501.02020)
 
 # Method
-The training and evaluating code of our method is adapted from [FOCUS](https://github.com/zthang/focus).
+The detecting and evaluating code of our method is adapted from [FOCUS](https://github.com/zthang/focus).
 
 ![image](https://github.com/141forever/UncerSema4HalluDetec/blob/main/figures/method.jpg)
 
