@@ -15,6 +15,10 @@ The detecting and evaluating code of our method is adapted from [FOCUS](https://
 
 The overview of our approach for hallucination detection. For token-level uncertainty, we integrate the maximum and variance of the probabilities, along with a sequence decay term. Regarding to sentence-level uncertainty, we interpolate the sum of entity uncertainty through relation-based propagation and global uncertainty via quantile. Finally, we incorporate the relations of neighbor sentences in the semantic graph with graph-based uncertainty calibration for passage-level uncertainty.
 
+We use AMR and GPT4 to extract the amr path of each sentence. Some of the results are shown in `amr_path_example.txt`, '+' splits the sample ID, sentence ID, and amr path triplets.
+
+We provide examples of uncertainty computation at three different granularities in `token_level.py`, `sentence_level.py`, and `passage_level.py`, respectively. For the NLI part, we use [SelfCheckGPT](https://github.com/potsawee/selfcheckgpt) as an intermediate component.
+
 # Citation
 If you think this method helps, welcome to cite our paper.
 ```
